@@ -114,7 +114,7 @@ while True:
             cv2.rectangle(im, (x-22,y-90), (x+w+22, y-22), (0,255,0), -1)
             cv2.putText(im, str(Id1), (x,y-40), font, 2, (255,255,255), 3)
             # Display the video frame with the bounded rectangle
-        cv2.imshow('im',im)
+        cv2.imshow('Face Recognition',im)
         # If 'q' is pressed, close program
         if cv2.waitKey(2) & 0xFF == ord('q'): #if cv2.waitKey(10) & 0xFF == ord('q'):
             break
